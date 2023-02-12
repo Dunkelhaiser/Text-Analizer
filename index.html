@@ -8,12 +8,14 @@
         <meta name="description" content="Text Analizer - app to analize your text files." />
         <title>Text Analizer</title>
         <script src="./src/ts/fileSelect.ts" type="module" defer></script>
+        <script src="./src/ts/analizer.ts" type="module" defer></script>
+        <script src="./src/ts/loadText.ts" type="module" defer></script>
     </head>
     <body>
         <main>
             <section class="section">
                 <div class="main">
-                    <div class="container center">
+                    <div class="container center" id="main-container">
                         <h1>Select File To Read</h1>
                         <div class="file-select-wrapper">
                             <input type="file" accept=".txt" id="choose-file" />
@@ -21,11 +23,7 @@
                             <span>No File Selected</span>
                         </div>
                         <h2>Or Select Existing</h2>
-                        <ul class="file-links">
-                            <li>Lorem Ipsum</li>
-                            <li>Lord of the Rings</li>
-                            <li>Mein Kampf</li>
-                        </ul>
+                        <ul class="file-links"></ul>
                     </div>
                     <!-- <div class="container">
                         <h1>Lorem Ipsum</h1>

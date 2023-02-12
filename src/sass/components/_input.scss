@@ -5,6 +5,7 @@ input {
     padding: 0.5rem 1rem;
 
     font-size: 1.4rem;
+    color: inherit;
 
     background-color: transparent;
     border: 0.5px solid $light-text-light;
@@ -14,4 +15,42 @@ input {
     &:focus {
         border: 0.5px solid $light-text-dark;
     }
+}
+
+.input-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+
+    border: none;
+    border-bottom: 1px solid $light-text;
+    border-radius: 0;
+
+    &:focus {
+        border: none;
+        border-bottom: 1px solid $light-text-dark;
+    }
+}
+
+input.error {
+    border-bottom: 2px solid $light-red;
+
+    &::placeholder {
+        color: $light-red;
+    }
+
+    &:focus {
+        border-bottom: 2px solid $light-red;
+    }
+}
+
+span.error-msg {
+    margin-left: 1rem;
+    color: $light-red;
+}
+
+.form-field {
+    @include flex(column, flex-start, flex-start, flex-start, 1rem, nowrap);
+
+    position: relative;
+    width: 100%;
 }
