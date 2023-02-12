@@ -1,4 +1,9 @@
 .section {
+    @include respond-tablet-landscape {
+        grid-template-columns: 1fr;
+        padding: 3rem;
+    }
+
     display: grid;
     grid-template-columns: 5fr 2fr;
     gap: 5rem;
@@ -24,9 +29,8 @@
             }
         }
     }
+}
 
-    @include respond-tablet-landscape {
-        grid-template-columns: 1fr;
-        padding: 3rem;
-    }
+.center {
+    align-items: center;
 }

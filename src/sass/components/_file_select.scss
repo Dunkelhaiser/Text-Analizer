@@ -1,0 +1,36 @@
+.file-select {
+    @include hover;
+
+    cursor: pointer;
+
+    padding: 1.5rem;
+
+    font-size: 1.4rem;
+    color: $light-foreground;
+
+    background-color: $light-blue;
+    border: none;
+    border-radius: 0.35em;
+    outline-color: $light-blue-active;
+
+    &:hover {
+        background-color: $light-blue-hover;
+    }
+
+    &:active {
+        background-color: $light-blue-active;
+    }
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-select-wrapper {
+    @include flex(column, center, center, center, 1rem, nowrap);
+
+    span {
+        font-size: 1.4rem;
+        color: $light-text-light;
+    }
+}

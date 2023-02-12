@@ -7,12 +7,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Text Analizer - app to analize your text files." />
         <title>Text Analizer</title>
+        <script src="./src/ts/fileSelect.ts" type="module" defer></script>
     </head>
     <body>
         <main>
             <section class="section">
                 <div class="main">
-                    <div class="container">
+                    <div class="container center">
+                        <h1>Select File To Read</h1>
+                        <div class="file-select-wrapper">
+                            <input type="file" accept=".txt" id="choose-file" />
+                            <label for="choose-file" class="file-select">Select File</label>
+                            <span>No File Selected</span>
+                        </div>
+                        <h2>Or Select Existing</h2>
+                        <ul class="file-links">
+                            <li>Lorem Ipsum</li>
+                            <li>Lord of the Rings</li>
+                            <li>Mein Kampf</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="container">
                         <h1>Lorem Ipsum</h1>
                         <div class="scroll">
                             <p>
@@ -94,12 +109,12 @@
                                 lobortis velit massa sed nulla. Aliquam nec sem bibendum, eleifend est sed, euismod mauris.
                             </p>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <aside>
                     <div class="container">
                         <h1>Search</h1>
-                        <input type="text" />
+                        <input type="text" aria-label="Search" />
                     </div>
                     <div class="container">
                         <h1>Most Used Words</h1>
