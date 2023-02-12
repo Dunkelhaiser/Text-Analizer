@@ -1,0 +1,32 @@
+.section {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 5rem;
+    align-items: start;
+
+    padding: 5rem 20rem;
+
+    aside {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+
+        .container {
+            gap: 1rem;
+            padding: 2rem 4rem;
+
+            h1 {
+                font-size: 1.7rem;
+            }
+
+            span {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    @include respond-tablet-landscape {
+        grid-template-columns: 1fr;
+        padding: 3rem;
+    }
+}

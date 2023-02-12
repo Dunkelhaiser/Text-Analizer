@@ -1,0 +1,36 @@
+input[type="checkbox"] {
+    display: inline-block;
+
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 1.3rem;
+    margin-bottom: 0.3rem;
+
+    vertical-align: bottom;
+
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid $light-text-light;
+    border-radius: 0.2rem;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "\2713";
+
+    display: block;
+
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+input[type="checkbox"].error {
+    background-color: $light-red-light;
+    border: 1px solid $light-red;
+}
+
+input[type="checkbox"].success {
+    background-color: $light-green-light;
+    border: 1px solid $light-green;
+}

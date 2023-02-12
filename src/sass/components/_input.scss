@@ -1,0 +1,17 @@
+input {
+    display: block;
+
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    font-size: 1.4rem;
+
+    background-color: transparent;
+    border: 0.5px solid $light-text-light;
+    border-radius: 0.35em;
+    outline: none;
+
+    &:focus {
+        border: 0.5px solid $light-text-dark;
+    }
+}

@@ -1,0 +1,55 @@
+form {
+    @include flex(column, flex-start, flex-start, flex-start, 3rem, nowrap);
+
+    width: 100%;
+
+    .form-field,
+    .form-field-container {
+        position: relative;
+        width: 100%;
+    }
+
+    .form-field-container {
+        @include flex(column, flex-start, flex-start, flex-start, 1rem, nowrap);
+    }
+
+    label[aria-label] {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        color: $light-text;
+
+        i {
+            font-size: 1.6rem;
+        }
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    a {
+        font-size: 1.3rem;
+        color: $light-text;
+
+        &:hover,
+        &:focus {
+            color: $light-text-light;
+        }
+
+        &:active {
+            color: $light-text-dark;
+        }
+    }
+
+    span {
+        font-size: 1.4rem;
+        color: $light-text-light;
+    }
+
+    span.error-msg {
+        color: $light-red;
+    }
+}

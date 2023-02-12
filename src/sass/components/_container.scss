@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    max-height: calc(100vh - 10rem);
+    padding: 4rem;
+    padding-bottom: 5rem;
+
+    background-color: $light-foreground;
+    border-radius: 1.2rem;
+    box-shadow: 0 15px 16.83px 0.17px rgb(0 0 0 / 5%);
+
+    h1 {
+        font-size: 3.2rem;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.6rem;
+        text-indent: 2.5rem;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    span {
+        font-size: 1.8rem;
+    }
+}
+
+.scroll {
+    overflow-y: auto;
+    padding-right: 1rem;
+}
